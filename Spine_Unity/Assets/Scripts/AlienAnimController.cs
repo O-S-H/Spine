@@ -19,7 +19,7 @@ public class AlienAnimController : MonoBehaviour
         //skeletonAnimation.state.SetAnimation(0, "run", true);// 0을 디폴트?
         skeletonAnimation = GetComponent<SkeletonAnimation>();
         //Get: 단일적인
-        // Add: 연속 &연결 애니메이션 사용!
+        // Add: 연속 &연결 애니메이션 사용! /트랙, 동작 여부 지연시간
         skeletonAnimation.state.AddAnimation(0, "run", false, 0);//마지막 0 지연시간
         skeletonAnimation.state.AddAnimation(0, "jump", false, 0);
         skeletonAnimation.state.AddAnimation(0, "hit", false, 1); //점프에서 히트로 넘어가지전 1초간 지연
