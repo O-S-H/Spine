@@ -24,7 +24,7 @@ public class AlienAnimController : MonoBehaviour
         skeletonAnimation.state.AddAnimation(0, "jump", false, 0);
         skeletonAnimation.state.AddAnimation(0, "hit", false, 1); //점프에서 히트로 넘어가지전 1초간 지연
         skeletonAnimation.state.AddAnimation(0, "death", false, 1);//런으로 넘어가기전 2초간 지연
-        //반복하고 싶으면 반복값
+        //반복하고 싶으면 반복문
 
         // Update is called once per frame
         void Update()
